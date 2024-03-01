@@ -1,0 +1,250 @@
+:root {
+  --font-size-x-small: clamp(1rem, 0.646rem + 0.462vw, 1.2rem);
+  --font-size-small: clamp(1.2rem, 0.846rem + 0.462vw, 1.4rem);
+  --font-size-medium: clamp(1.4rem, 1.046rem + 0.462vw, 1.6rem);
+  --font-size-large: clamp(2.1rem, 1.569rem + 0.693vw, 2.4rem);
+  --font-size-title: clamp(7.2rem, 0.823rem + 8.314vw, 10.8rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #ececec;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (768px <= width) {
+    place-content: center;
+  }
+}
+
+.title {
+  display: grid;
+  place-content: center;
+  text-transform: capitalize;
+  overflow: hidden;
+  margin: 1rem -1rem 0;
+  height: clamp(5.4rem, 0.617rem + 6.236vw, 8.1rem);
+  border-bottom: 1px solid #000;
+
+  @media (768px <= width) {
+    margin: 4rem -1rem 0;
+  }
+
+  h1 {
+    margin-bottom: -2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-size: var(--font-size-title);
+  }
+}
+
+.videos {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+
+  @media (768px <= width) {
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    padding: 3rem 4rem;
+  }
+}
+
+.video {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+
+  @media (768px <= width) {
+    cursor: pointer;
+
+    &:hover video {
+      transform: scale(1.1);
+    }
+
+    &:hover .video-meta {
+      opacity: 1;
+    }
+  }
+
+  video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+
+    @media (768px <= width) {
+      transition: transform 0.3s linear;
+    }
+  }
+}
+
+.video-meta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  @media (768px <= width) {
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+}
+
+.video-meta-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1rem 2rem;
+  height: 100%;
+  color: #fff;
+  text-shadow: 0 0 0.2rem hsla(0, 0%, 0%, 0.5);
+
+  @media (768px <= width) {
+    display: grid;
+    place-content: center;
+    padding: 2rem 3rem;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    color: #000;
+    text-shadow: none;
+  }
+
+  .video-label {
+    font-size: var(--font-size-x-small);
+  }
+
+  .video-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: var(--font-size-large);
+    line-height: 1.3;
+  }
+
+  .video-caption {
+    text-align: left;
+    font-size: var(--font-size-x-small);
+  }
+}
+
+.footer {
+  margin: 0 -1rem;
+  padding: 2rem 1rem 3rem;
+  border-top: 1px solid #000;
+  text-align: center;
+  font-size: var(--font-size-small);
+}
+
+/*---------------------------------------------------
+モーダルCSS
+---------------------------------------------------*/
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  height: 100vh;
+
+  /* 映像に干渉しないで背景をクリックで閉じるために追加 */
+  .modal-bg {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.modal-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-content: center;
+  justify-items: end;
+  width: calc(100% - 2rem);
+
+  @media (768px <= width) {
+    padding: 0;
+    width: auto;
+  }
+
+  video {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 0.5rem;
+
+    @media (768px <= width) {
+      width: 750px;
+      height: auto;
+    }
+  }
+
+  /* このエリアをクリックで閉じるために.modal-closeBtnを.modal-closeWrapで囲う */
+  .modal-closeWrap {
+    width: 100%;
+    text-align: right;
+
+    .modal-closeBtn {
+      display: inline-block;
+      color: #fff;
+
+      &::before,
+      &::after {
+        display: block;
+        content: '';
+        width: 3.6rem;
+        height: 0.1rem;
+        background: #fff;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+        margin-top: 1.8rem;
+      }
+
+      &::after {
+        transform: rotate(45deg);
+        margin-bottom: 1.8rem;
+      }
+
+      @media (768px <= width) {
+        cursor: pointer;
+
+        &::before,
+        &::after {
+          width: 4.8rem;
+        }
+
+        &::before {
+          margin-top: 2.4rem;
+        }
+
+        &::after {
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .modal-title {
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: left;
+    font-size: var(--font-size-x-small);
+    color: #363636;
+  }
+}
