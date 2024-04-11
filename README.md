@@ -6,6 +6,12 @@
   <img src="https://img.shields.io/badge/-Css3-000000.svg?logo=css3&style=for-the-badge">
 </p>
 
+#### POPUP　[https://koma104.github.io/koma-portfolio/popup/](https://koma104.github.io/koma-portfolio/burgers/)
+* PICK　UP部分にslickを使用
+* 右上のメニューボタンをjavascriptで制御
+* レスポンシブ対応
+
+
 #### POPUP　[https://koma104.github.io/koma-portfolio/popup/](https://koma104.github.io/koma-portfolio/popup/)
 * クリック（タップ）することで画像が大きく表示されます
 * javascriptでclass付与
