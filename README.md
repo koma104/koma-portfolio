@@ -7,7 +7,7 @@
 </p>
 
 #### BURGERS　[https://koma104.github.io/koma-portfolio/popup/](https://koma104.github.io/koma-portfolio/burgers/)
-* PICK　UP部分にslickを使用
+* PICKUP部分にslickを使用
 * 右上のメニューボタンをjavascriptで制御
 * レスポンシブ対応
 
