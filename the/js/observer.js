@@ -64,7 +64,7 @@ ioBg.observe(access);
 // heroイメージの拡大縮小
 const Threshold = () => {
   let thresholds = [];
-  let numSteps = 1000;
+  let numSteps = 100;
 
   for (let i = 1; i <= numSteps; i++) {
     let ratio = i / numSteps;
