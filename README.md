@@ -8,6 +8,10 @@
   <img src="https://img.shields.io/badge/-HTML5-333.svg?logo=html5&style=flat">
 </p>
 
+#### THE!　[https://koma104.github.io/koma-portfolio/the/](https://koma104.github.io/koma-portfolio/the/)
+* IntersectionObserverでスクロール連動エフェクトを制御
+* レスポンシブ対応
+
 #### BURGERS　[https://koma104.github.io/koma-portfolio/burgers/](https://koma104.github.io/koma-portfolio/burgers/)
 * PICKUP部分にslickを使用
 * 右上のメニューボタンをjavascriptで制御
