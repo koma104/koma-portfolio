@@ -479,6 +479,10 @@ SP
     padding: 5rem 3rem;
   }
 
+  .footer-wrap {
+    width: 100%;
+  }
+
   .footer-copy {
     margin-top: 2rem;
     width: 100%;
