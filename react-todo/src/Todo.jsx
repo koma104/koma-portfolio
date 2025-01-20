@@ -78,6 +78,6 @@ const SContentWrapper = styled.div`
   margin-inline: auto;
   padding-block: 40px;
   padding-inline: 20px;
-  max-width: 600px;
+  max-width: 540px;
   height: 100%;
 `;
