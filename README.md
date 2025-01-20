@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/-HTML5-333.svg?logo=html5&style=flat">
 </p>
 
-#### TODO　[https://koma104.github.io/koma-portfolio/the/](https://koma104.github.io/koma-portfolio/react-todo/)
+#### TODO　[https://koma104.github.io/koma-portfolio/react-todo/](https://koma104.github.io/koma-portfolio/react-todo/)
 * ReactでTODOアプリを作成
 
 #### THE!　[https://koma104.github.io/koma-portfolio/the/](https://koma104.github.io/koma-portfolio/the/)
