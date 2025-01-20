@@ -20,17 +20,19 @@ export const InputTodo = (props) => {
 
 const SInput = styled.input`
   margin-inline-end: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
   background-color: var(--back-color);
-  border-radius: 10px;
+  font-size: 16px;
+  color: #535d74;
+  border-radius: 8px;
   border: 3px solid #f3f4f7;
   box-shadow: 2px 2px 3px rgba(55, 84, 170, 0.15),
     inset 0px 0px 4px rgba(255, 255, 255, 0),
     inset 7px 7px 15px rgba(55, 84, 170, 0.15),
     inset -7px -7px 20px rgba(255, 255, 255, 1),
     0px 0px 4px rgba(255, 255, 255, 0.2);
-  padding: 5px 15px;
   outline: none;
-  color: #535d74;
 `;
 
 const SInputTodo = styled.div`
