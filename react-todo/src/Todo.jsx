@@ -43,7 +43,7 @@ export const Todo = () => {
     setIncompleteTodos(newIncompleteTodos);
   };
 
-  const isMaxLimitIncompleteTodos = incompleteTodos.length >= 3;
+  const isMaxLimitIncompleteTodos = incompleteTodos.length >= 2;
 
   return (
     <SContentWrapper isMaxLimit={isMaxLimitIncompleteTodos}>
@@ -56,7 +56,7 @@ export const Todo = () => {
 
       {isMaxLimitIncompleteTodos && (
         <p style={{ color: "red", textAlign: "center" }}>
-          keep it under 3 content
+          keep it under 2 content
         </p>
       )}
 

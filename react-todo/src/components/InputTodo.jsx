@@ -4,22 +4,29 @@ export const InputTodo = (props) => {
   const { todoText, onChange, onClick, disabled } = props;
   return (
     <SInputTodo>
-      <SInput
-        type="text"
-        placeholder="TODOを入力"
-        value={todoText}
-        onChange={onChange}
-        disabled={disabled}
-      />
-      <SButton onClick={onClick} disabled={disabled}>
-        追加
-      </SButton>
+      <SContentWrapper>
+        <SInput
+          type="text"
+          placeholder="TODOを入力"
+          value={todoText}
+          onChange={onChange}
+          disabled={disabled}
+        />
+        <SButton onClick={onClick} disabled={disabled}>
+          追加
+        </SButton>
+      </SContentWrapper>
     </SInputTodo>
   );
 };
 
+const SContentWrapper = styled.div`
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: auto 90px;
+`
+
 const SInput = styled.input`
-  margin-inline-end: 8px;
   padding-block: 8px;
   padding-inline: 16px;
   background-color: var(--back-color);
