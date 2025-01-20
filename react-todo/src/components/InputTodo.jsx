@@ -23,7 +23,7 @@ export const InputTodo = (props) => {
 const SContentWrapper = styled.div`
   display: grid;
   column-gap: 16px;
-  grid-template-columns: auto 90px;
+  grid-template-columns: auto 80px;
 `
 
 const SInput = styled.input`
