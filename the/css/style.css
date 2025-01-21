@@ -192,7 +192,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   background-color: #dcdcdc;
   opacity: 0;
   transition: 0.7s;
@@ -204,6 +204,7 @@ button {
 
 .hero-wraper {
   position: relative;
+  height: 100svh;
 }
 
 .hero-img {
@@ -211,6 +212,7 @@ button {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+  height: 100svh;
 
   img {
     /* widthはobserver.jsで指定 */
