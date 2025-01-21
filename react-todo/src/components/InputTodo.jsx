@@ -21,12 +21,13 @@ export const InputTodo = (props) => {
 };
 
 const SContentWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 60% auto;
+  display: flex;
+  // grid-template-columns: 60% 90px;
   column-gap: 16px;
 `
 
 const SInput = styled.input`
+  width: 196px;
   padding-block: 8px;
   padding-inline: 10px;
   background-color: var(--back-color);
