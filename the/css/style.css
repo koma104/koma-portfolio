@@ -498,10 +498,6 @@ button {
 .footer-wrap {
   p {
     font-size: 1.4rem;
-
-    + p {
-      margin-top: 0.5rem;
-    }
   }
 
   .sns {
