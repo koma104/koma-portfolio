@@ -21,9 +21,8 @@ export const InputTodo = (props) => {
 };
 
 const SContentWrapper = styled.div`
-  display: grid;
+  display: flex;
   column-gap: 16px;
-  grid-template-columns: auto minmax(90px, auto);
 `
 
 const SInput = styled.input`
