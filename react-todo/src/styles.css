@@ -26,5 +26,6 @@ button {
     inset 0px 0px 4px rgba(255, 255, 255, 0.2), inset 7px 7px 15px rgba(55, 84, 170, 0),
     inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0);
   transition: box-shadow 0.25s ease;
+  font-size: 14px;
   color: #000;
 }

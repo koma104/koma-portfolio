@@ -22,7 +22,6 @@ export const InputTodo = (props) => {
 
 const SContentWrapper = styled.div`
   display: flex;
-  // grid-template-columns: 60% 90px;
   column-gap: 16px;
 `
 
