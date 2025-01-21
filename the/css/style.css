@@ -28,7 +28,6 @@ body {
 
 a {
   text-decoration: none;
-  pointer-events: none;
   color: var(--font-color);
 
   &:hover {
@@ -50,8 +49,6 @@ li {
 }
 
 p {
-  text-decoration: none;
-  pointer-events: none;
   font-size: 1.6rem;
 }
 
