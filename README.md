@@ -9,28 +9,21 @@
 </p>
 
 #### TODO　[https://koma104.github.io/koma-portfolio/react-todo/](https://koma104.github.io/koma-portfolio/react-todo/)
-* ReactでTODOアプリを作成
+* React
 
 #### THE!　[https://koma104.github.io/koma-portfolio/the/](https://koma104.github.io/koma-portfolio/the/)
-* IntersectionObserverでスクロール連動エフェクトを制御
+* IntersectionObserverAPI
 * レスポンシブ対応
 
 #### BURGERS　[https://koma104.github.io/koma-portfolio/burgers/](https://koma104.github.io/koma-portfolio/burgers/)
-* PICKUP部分にslickを使用
-* 右上のメニューボタンをjavascriptで制御
+* slick
 * レスポンシブ対応
 
-
 #### POPUP　[https://koma104.github.io/koma-portfolio/popup/](https://koma104.github.io/koma-portfolio/popup/)
-* クリック（タップ）することで画像が大きく表示されます
-* javascriptでclass付与
-
+* cssアニメーション
 
 #### SCROLL　[https://koma104.github.io/koma-portfolio/scroll/](https://koma104.github.io/koma-portfolio/scroll/)
-* スクロールすることで背景が切り替わります
-* CSSのみで作成したシンプルなページ
-
+* cssアニメーション
 
 #### VIDEO　[https://koma104.github.io/koma-portfolio/video/](https://koma104.github.io/koma-portfolio/video/)
-* クリック（タップ）することで動画が再生されます
 * javascriptで動作を制御
