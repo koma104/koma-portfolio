@@ -23,14 +23,13 @@ export const InputTodo = (props) => {
 const SContentWrapper = styled.div`
   display: grid;
   column-gap: 16px;
-  grid-template-columns: auto minmax(72px, auto);
+  grid-template-columns: 1fr minmax(90px, auto);
 `
 
 const SInput = styled.input`
   padding-block: 8px;
   padding-inline: 16px;
   background-color: var(--back-color);
-  font-size: 16px;
   color: #535d74;
   border-radius: 8px;
   border: 3px solid #f3f4f7;
