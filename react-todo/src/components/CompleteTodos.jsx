@@ -51,5 +51,9 @@ const Title = styled.p`
     li:not(:first-child) {
       margin-block-start: 16px;
     }
+
+    li::marker {
+      color: #999;
+    }
   }
 `;
