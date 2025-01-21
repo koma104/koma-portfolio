@@ -202,9 +202,12 @@ button {
   display: block;
 }
 
+#hero {
+  height: 100svh;
+}
+
 .hero-wraper {
   position: relative;
-  /* height: 100vh; */
 }
 
 .hero-img {
