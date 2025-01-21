@@ -497,7 +497,7 @@ button {
 
 .footer-wrap {
   p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .sns {
@@ -517,7 +517,7 @@ button {
   display: flex;
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
     &:not(:first-child) {
       margin-left: 2rem;
