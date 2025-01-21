@@ -12,13 +12,14 @@ html {
 .container {
   position: relative;
   display: grid;
-  justify-items: center;
+  grid-template-rows: 15% 70% 15%;
   height: 100vh;
-  text-align: center;
 }
 
 .title,
 .title-flap {
+  display: grid;
+  place-content: center;
   font-size: clamp(7.6rem, 6.183rem + 1.848vw, 8.4rem);
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -27,34 +28,20 @@ html {
   letter-spacing: -0.3rem;
 }
 
-.title {
-  position: absolute;
-  top: 1rem;
-}
-
 .title-flap {
-  position: absolute;
-  bottom: 1rem;
   transform: scale(-1);
 }
 
 .content {
-  position: absolute;
-  top: 0;
   z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 20% 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 4%;
+  margin-inline: auto;
+  padding-inline: 8%;
   width: 100%;
+  max-width: 800px;
   height: 100%;
-
-  @media (768px <= width) {
-    gap: 2rem;
-    padding: 12rem 10%;
-    max-width: 900px;
-  }
 }
 
 /*---------------------------------------------------
@@ -65,11 +52,6 @@ html {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  max-height: calc(100% - 15%);
-
-  @media (768px <= width) {
-    max-height: 100%;
-  }
 }
 
 .popup-img {
@@ -81,7 +63,7 @@ html {
   transition: 0.5s;
   filter: brightness(0.85);
 
-  @media (768px <= width) {
+  @media (hover: hover) {
     &:hover {
       filter: brightness(1);
     }
@@ -91,18 +73,11 @@ html {
   &.active {
     position: fixed;
     top: 15%;
-    left: 1rem;
+    left: 8%;
     z-index: 20;
-    width: calc(100% - 2rem);
+    width: calc(100% - 16%);
     height: calc(100% - 30%);
     filter: brightness(1);
-
-    @media (768px <= width) {
-      top: 12rem;
-      left: 10%;
-      width: calc(100% - 20%);
-      height: calc(100% - 24rem);
-    }
 
     @media (1200px <= width) {
       left: 22%;
@@ -114,10 +89,6 @@ html {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 0.8rem;
-
-    @media (768px <= width) {
-      border-radius: 1.2rem;
-    }
+    border-radius: 1.2rem;
   }
 }
