@@ -211,11 +211,10 @@ button {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
-  height: 100svh;
 
   img {
     /* widthはobserver.jsで指定 */
-    height: 100vh;
+    height: 100svh;
     flex-shrink: 0;
     object-fit: cover;
   }
