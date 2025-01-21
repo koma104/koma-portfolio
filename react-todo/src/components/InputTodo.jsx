@@ -28,8 +28,9 @@ const SContentWrapper = styled.div`
 
 const SInput = styled.input`
   padding-block: 8px;
-  padding-inline: 16px;
+  padding-inline: 10px;
   background-color: var(--back-color);
+  font-size: 16px;
   color: #535d74;
   border-radius: 8px;
   border: 3px solid #f3f4f7;
