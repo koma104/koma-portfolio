@@ -296,7 +296,7 @@ button {
   transform: translateX(-50%);
   margin: auto;
   height: fit-content;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1;
 }
 
@@ -497,13 +497,17 @@ button {
 
 .footer-wrap {
   p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+
+    + p {
+      margin-top: 0.5rem;
+    }
   }
 
   .sns {
     display: flex;
     margin-top: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 
     li {
       &:not(:first-child) {
@@ -517,7 +521,7 @@ button {
   display: flex;
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 
     &:not(:first-child) {
       margin-left: 2rem;
