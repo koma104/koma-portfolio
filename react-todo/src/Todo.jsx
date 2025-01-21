@@ -76,7 +76,7 @@ const SContentWrapper = styled.div`
   grid-template-rows: ${(props) =>
     props.isMaxLimit ? "auto auto 1fr 1fr" : "auto 1fr 1fr"};
   margin-inline: auto;
-  padding: 24px;
+  padding: 20px;
   max-width: 540px;
   height: 100%;
 `;
