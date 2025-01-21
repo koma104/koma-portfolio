@@ -27,7 +27,8 @@ const SContentWrapper = styled.div`
 `
 
 const SInput = styled.input`
-  width: 196px;
+  min-width: 196px;
+  width: calc(100% - 90px);
   padding-block: 8px;
   padding-inline: 10px;
   background-color: var(--back-color);
