@@ -260,6 +260,7 @@ button {
   text-align: center;
 }
 
+/* 下から浮き上がる文字 */
 .text-anime {
   position: absolute;
   inset: 0;
@@ -270,16 +271,17 @@ button {
 
   .wrap {
     margin-bottom: 0;
+    padding-inline: 0.8rem;
     border-bottom: none;
     background-color: #000;
     font-size: 12rem;
-    line-height: 0.8;
+    line-height: 1;
     overflow: hidden;
     animation: textAnime 1s 0.5s forwards ease-in-out;
     transform: translateY(110%);
 
     @media (max-width: 900px) {
-      font-size: 6.4rem;
+      font-size: 4rem;
     }
   }
 }
